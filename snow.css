@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    font-family: cursive;
+}
+header{
+    min-height: 100vh;
+    background:url(https://images.pexels.com/photos/3409373/pexels-photo-3409373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.snow1,.snow2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(snow.png);
+}
+.snow1{
+    background-size: 70em;
+    animation: snowfall 30s linear infinite;
+}
+.snow2{
+    background-size: 50em;
+    animation: snowfall 30s linear infinite;
+    opacity: 0.5;
+}
+.text{
+    text-align: center;
+    color: #fff;
+}
+.text h1{
+    font-family: cursive;
+    font-size: 4em;
+    text-shadow: 5px 5px 10px #111;
+}
+.text p{
+ color:white;  
+ font-weight:bolder;
+ font-size:x-large;
+}
+@keyframes snowfall{
+    100%{
+        background-position: 70em 70em;
+    }
+}
+@keyframes snowfall2{
+    100%{
+        background-position: 50em 0;
+    }
+}
+#btn
+{
+  font-size: x-large;
+  border: none;
+  width: 100px;
+  font-family: cursive;
+  border-radius: 6px;
+  padding: 3px;
+  color: white;
+  background-color:#7289da;
+  margin-top: 3px;
+}
+.cent{
+    text-align: center;
+    background-color: #51ed7b;
+}
